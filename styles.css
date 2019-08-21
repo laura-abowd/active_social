@@ -1,3 +1,6 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+}
 
 .nav-bar {
   background-color: white;
@@ -20,7 +23,7 @@
 
 .nav-link {
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 20px;
 
 }
 
@@ -29,6 +32,8 @@
   /* width: 100%; */
   max-width: 1200px;
   margin: auto;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .hero-image {
@@ -48,6 +53,11 @@ a:visited {
   height: 100px;
   width: 100px;
 }
+
+.nav-link {
+  text-transform: uppercase;
+}
+
 
 .container-center {
   background-color: blue;
