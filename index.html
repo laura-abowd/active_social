@@ -28,8 +28,8 @@
     </div>
 
     <div class="container">
-      <img class="hero-image" src="images/active_social_cover.png" alt="">
-      <p>We are an international video production and media company. We film, edit, and produce video content tailored to your needs. Interested in connecting? 
+      <img class="hero-image" src="images/hero-image2.png" alt="">
+      <p>We are an international video production and media company. We film, edit, and produce video content tailored to your needs. Interested in connecting?
       </p>
     </div>
 
@@ -50,38 +50,50 @@
         <iframe  src="https://www.youtube.com/embed/6V0UfejAo_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe  src="https://www.youtube.com/embed/2gWGergHsnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe  src="https://www.youtube.com/embed/Ll1i-ALe4gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
     </div>
-  </div>
     <!-- </div> -->
 
-<div class="icon-container">
+    <div class="icon-container">
 
 
-    <div class="skills-container">
-      <img class= "skills-icons" src="images/cameraIcon.png" alt="">
-      <img class= "skills-icons" src="images/circleIcon.png" alt="">
-      <img class= "skills-icons" src="images/envelopeIcon.png" alt="">
-      <img class= "skills-icons" src="images/musicIcon.png" alt="">
-      <img class= "skills-icons" src="images/airplaneIcon.png" alt="">
-      <img class= "skills-icons" src="images/soundIcon.png" alt="">
+      <div class="skills-container">
+        <img class="skills-icons" src="images/cameraIcon.png" alt="">
+        <img class="skills-icons" src="images/circleIcon.png" alt="">
+        <img class="skills-icons" src="images/envelopeIcon.png" alt="">
+        <img class="skills-icons" src="images/musicIcon.png" alt="">
+        <img class="skills-icons" src="images/airplaneIcon.png" alt="">
+        <div class="commercials-icon">
+          <img class="skills-icons" src="images/soundIcon.png" alt="">
+        </div>
+      </div>
     </div>
-</div>
-    <!-- <div class="contact-container">
+
+    <div class="contact-container">
       <p>This is the contact form div!</p>
       <div class="form">
         <h3>Let's connect</h3>
-        <label for="name">Enter your name:</label>
-        <input type="text" id="name" value="">
-        <label for="email">Enter your email address:</label>
-        <input type="date" id="birthday" value="">
-          <label for="care-select">Select care plan:</label>
-        <select id="care-select">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="neutral">Neutral</option>
-          </select>
+
+        <script type="text/javascript">
+          var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe9wZS59RjPg8I48LcmST7l7F2NFoBefb3bJC4iV6D9Z7YfCg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+          <label>Name*</label>
+          <input type="text" placeholder="Name*" name="entry.77453895" required>
+
+          <label>Email address*</label>
+          <input type="email" placeholder="Email address*" name="entry.685499877" required>
+
+          <label>Message*</label>
+          <textarea rows="5" placeholder="Message*" name="entry.1014598289" required></textarea>
+
+          <button type="submit">Submit</button>
       </div>
-    </div> -->
+      </form>
+    </div>
 
     <footer class="footer">
       <div class="footer-container">
