@@ -1,12 +1,7 @@
+
 .contact-container {
   text-decoration-color: white;
   background-color: black;
-}
-
-.button {
-}
-
-.contact-container {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
@@ -16,6 +11,15 @@
   width: 100%;
   max-width: 400px;
   padding: 0 40px 40px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .contact-form {
@@ -31,4 +35,8 @@ form {
 
 input, textarea {
   margin: 0 0 20px;
+}
+
+button {
+  border-radius: 4px;
 }
