@@ -1,0 +1,34 @@
+.contact-container {
+  text-decoration-color: white;
+  background-color: black;
+}
+
+.button {
+}
+
+.contact-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+.connect-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 40px 40px;
+}
+
+.contact-form {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+form {
+  display: grid;
+  width: 100%;
+}
+
+input, textarea {
+  margin: 0 0 20px;
+}

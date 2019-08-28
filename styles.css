@@ -1,5 +1,7 @@
 :root {
   font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: grey;
 }
 
 html,body {
@@ -7,14 +9,15 @@ html,body {
 }
 
 .nav-bar {
-  background-color: white;
+  background-color: #221E22;
   margin: 0 0 20px 0;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 0 rgba(93, 96, 99, 0.1);
+  box-shadow: 0 2px 0 hsla(360, 100%, 100%, 0.5);
+  z-index: 99;
 }
 
 .nav-content {
@@ -28,22 +31,30 @@ html,body {
 .nav-link {
   display: inline-block;
   padding-right: 20px;
-
 }
 
 .container {
-  /* background-color: red; */
-  /* width: 100%; */
-  max-width: 1200px;
-  margin: auto;
-  font-size: 20px;
-  font-weight: lighter;
+  margin-top: 100px;
+  height: 600px;
+  background-image: url("images/hero-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.hero-image {
-  max-width: 1200px;
-  margin-top: 100px;
-  
+.image-overlay {
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  justify-items: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 a:link {
@@ -90,12 +101,7 @@ a:visited {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: ". . ." ". . .";
-
-    /* position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0; */
-  }
+}
 
 .vid-still {
   width: 100%;
@@ -103,8 +109,8 @@ a:visited {
 }
 
 iframe {
+  height: 100%;
   width: 100%;
-  height: 200px;
 }
 /* .iframe-container iframe{
   position: absolute;
@@ -122,8 +128,19 @@ iframe {
    position:absolute;
 } */
 
+.icon-container {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
 .skills-container {
-  background-color: grey;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 40px 40px;
+}
+
+.skills-list {
   display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -133,13 +150,16 @@ iframe {
   justify-items: center;
 }
 
+.skill {
+  display: grid;
+  justify-items: center;ı
+}
+
 .skills-icons {
   padding: 50px 0 20px;
 }
 
-
 .footer-container {
-  background-color: purple;
   padding-top: 30px;
   padding-bottom: 30px;
 }

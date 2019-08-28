@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Active Social</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contactform.css" />
 </head>
 
 <body>
@@ -14,30 +15,28 @@
         <img class="nav-logo" src="images/active_social_logo.png" alt="logo">
         <nav class="nav-links">
           <ol>
-            <li class="nav-link"><a href="">Who we are</a></li>
-            <li class="nav-link"><a href="">What we do</a> </li>
+            <!-- <li class="nav-link"><a href="./aboutus.html">Who we are</a></li>
+            <li class="nav-link"><a href="">What we do</a> </li> -->
             <li class="nav-link"><a href="">Contact Us</a></li>
-            <!-- <a href="http:instagram.com">Instagram</a> -->
-            <!-- <a href="http:twitter.com">Twitter</a> -->
-            <!-- <img src="images/facebook_icon.png" alt="facebook logo" height="40" width="40">
-            <img src="images/twitter_icon.png" alt="twitter logo" height="40" width="40">
-            <img src="images/instagram_icon.png" alt="instagram logo" height="40" width="40"> -->
           </ol>
         </nav>
       </div>
     </div>
 
     <div class="container">
-      <img class="hero-image" src="images/hero-image2.png" alt="">
-      <p>We are an international video production and media company. We film, edit, and produce video content tailored to your needs. Interested in connecting?
-      </p>
+      <div class="image-overlay">
+        <h1 class="hero-text">We are an international video production and media company. We film, edit, and produce video content tailored to your needs.
+        </h1>
+      </div>
     </div>
 
     <!-- <div class="container-center"> -->
     <div class="video-container">
+
       <div class="iframe-container">
 
-        <img class="vid-still" src="images/ALFA_FINAL_MASTER.00_00_03_06.Still022-2.jpg" alt="logo">
+        <iframe src="https://www.youtube.com/embed/Z3S7ICFDgEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <img class="vid-still" src="images/ALFA_FINAL_MASTER.00_00_03_06.Still022-2.jpg" alt="logo"> -->
         <img class="vid-still" src="images/ALFA_FINAL_MASTER.00_00_03_06.Still022-2.jpg" alt="logo">
         <img class="vid-still" src="images/ALFA_FINAL_MASTER.00_00_03_06.Still022-2.jpg" alt="logo">
         <img class="vid-still" src="images/ALFA_FINAL_MASTER.00_00_03_06.Still022-2.jpg" alt="logo">
@@ -56,52 +55,82 @@
 
     <div class="icon-container">
 
-
       <div class="skills-container">
-        <img class="skills-icons" src="images/cameraIcon.png" alt="">
-        <img class="skills-icons" src="images/circleIcon.png" alt="">
-        <img class="skills-icons" src="images/envelopeIcon.png" alt="">
-        <img class="skills-icons" src="images/musicIcon.png" alt="">
-        <img class="skills-icons" src="images/airplaneIcon.png" alt="">
-        <div class="commercials-icon">
-          <img class="skills-icons" src="images/soundIcon.png" alt="">
+        <div class="skills-list">
+          <div class="skill">
+            <img class="skills-icons" src="images/cameraIcon.png" alt="">
+            <h2>Commercials</h2>
+          </div>
+
+          <div class="skill">
+            <img class="skills-icons" src="images/circleIcon.png" alt="">
+            <h2>Weddings</h2>
+          </div>
+
+          <div class="skill">
+            <img class="skills-icons" src="images/envelopeIcon.png" alt="">
+            <h2>Event Coverage</h2>
+          </div>
+
+          <div class="skill">
+            <img class="skills-icons" src="images/musicIcon.png" alt="">
+            <h2>Music Videos</h2>
+          </div>
+
+          <div class="skill">
+            <img class="skills-icons" src="images/airplaneIcon.png" alt="">
+            <h2>Photography</h2>
+          </div>
+
+          <div class="skill">
+            <img class="skills-icons" src="images/soundIcon.png" alt="">
+            <h2>Drone Operation</h2>
+          </div>
+
         </div>
       </div>
+
     </div>
 
     <div class="contact-container">
-      <p>This is the contact form div!</p>
-      <div class="form">
-        <h3>Let's connect</h3>
 
-        <script type="text/javascript">
-          var submitted = false;
-        </script>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe9wZS59RjPg8I48LcmST7l7F2NFoBefb3bJC4iV6D9Z7YfCg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <div class="connect-form">
+        <h3>Let's connect!</h3>
+        <p>For comprehensive details on services, please send us a message.</p>
 
-          <label>Name*</label>
-          <input type="text" placeholder="Name*" name="entry.77453895" required>
+        <div class="contact-form">
+          <script type="text/javascript">
+            var submitted = false;
+          </script>
 
-          <label>Email address*</label>
-          <input type="email" placeholder="Email address*" name="entry.685499877" required>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
 
-          <label>Message*</label>
-          <textarea rows="5" placeholder="Message*" name="entry.1014598289" required></textarea>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfTF00pHHxPHGvgbxvrykGirMNvM46Zwp1rsNVIKU3QqfCJpQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-          <button type="submit">Submit</button>
+            <label id="name-label">Name:</label>
+            <input type="text" placeholder="Name*" name="entry.638558337" required>
+
+            <label id="email-label">Email address:</label>
+            <input type="email" placeholder="Email address*" name="entry.2015781974" required>
+
+            <label id="message-label">Message:</label>
+            <textarea rows="5" placeholder="Message*" name="entry.1678428078" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-      </form>
+
     </div>
 
     <footer class="footer">
       <div class="footer-container">
-        <h2>This is a footer</h2>
+        <p>COPYRIGHT © 2019 Active Social Media, LLC. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
-
   </div>
+
 </body>
 
 </html>
