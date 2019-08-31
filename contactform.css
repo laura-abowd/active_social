@@ -1,7 +1,7 @@
 
 .contact-container {
   text-decoration-color: white;
-  background-color: black;
+  background-color: var(--secondary-accent);
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;

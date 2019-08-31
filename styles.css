@@ -1,22 +1,37 @@
 :root {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  background-color: grey;
+  --primary: hsl(174, 100%, 48%);
+  --primary-accent: hsl(177, 85%, 39%);
+  --secondary: hsl(213, 28%, 5%);
+  --secondary-accent: hsl(211, 19%, 15%);
+  --base: 'Ubuntu', sans-serif;
+  --display: 'Nova Mono', monospace;
 }
 
-html,body {
+html, 
+body {
+  font-family: var(--base);
+  color: var(--primary);
+  background-color: var(--secondary);
   margin: 0;
 }
 
+h1 {
+  margin: 20px;
+}
+
+.white {
+  color: white;
+}
+
 .nav-bar {
-  background-color: #221E22;
+  background-color: var(--secondary);
   margin: 0 0 20px 0;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 0 hsla(360, 100%, 100%, 0.5);
+  box-shadow: 0 2px 0 hsla(360, 100%, 100%, 0.2);
   z-index: 99;
 }
 
@@ -34,9 +49,10 @@ html,body {
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 77px;
   height: 600px;
-  background-image: url("images/hero-image.png");
+  background-image: url("assets/images/hero-image.png");
+  /* opacity: 0.5; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -44,25 +60,28 @@ html,body {
 
 .image-overlay {
   position: absolute;
-  top: 260px;
+  top: 180px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   display: grid;
   justify-items: center;
 }
 
 .hero-text {
+  font-family: var(--display);
+  text-transform: uppercase;
   max-width: 800px;
   text-align: center;
   padding: 40px 20px;
 }
 
 a:link {
-  color: #73C2FB;
+  color: var(--primary);
+  text-decoration: none;
 }
 
 a:visited {
-  color: #919191;
+  color: var(--primary-accent);
 }
 
 .nav-logo {
@@ -116,7 +135,6 @@ iframe {
 .image-btn {
   position: relative;
   width: 100;
-
 }
 
 .image-btn .btn {
@@ -128,7 +146,13 @@ iframe {
   background-color: black;
 }
 
-
+i {
+  border: 2px solid var(--primary-accent);
+  border-radius: 50%;
+  padding: 30px;
+  margin: 60px 0 0 0;
+  color: white;
+}
 
 .icon-container {
   width: 100%;
@@ -146,15 +170,15 @@ iframe {
   display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* grid-template-areas: ". . ." ". . ."; */
-    /* grid-gap: 20px 10px; */
-  /* width: 100%; */
-  justify-items: center;
+    justify-items: center;
 }
 
 .skill {
   display: grid;
   justify-items: center;
+  /* border: 1px solid var(--primary);
+  border-bottom: 4px solid var(--primary); */
+
 }
 
 .skills-icons {
@@ -164,4 +188,7 @@ iframe {
 .footer-container {
   padding-top: 30px;
   padding-bottom: 30px;
+  display: grid;
+  justify-items: center;
+  color: var(--secondary-accent);
 }
