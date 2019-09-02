@@ -192,3 +192,14 @@ i {
   justify-items: center;
   color: var(--secondary-accent);
 }
+
+
+/* tablet styles */
+@media (max-width: 768px) {
+
+}
+
+/* phone styles */
+@media (max-width: 576px) {
+
+}
