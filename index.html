@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="contactform.css" />
   <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Ubuntu:400,700,700i&display=swap" rel="stylesheet">
-  <link href="/assets/css/all.css" rel="stylesheet"> <!--load all styles -->
+  <link href="/assets/css/all.css" rel="stylesheet">
+  <!--load all styles -->
 </head>
 
 <body>
@@ -21,7 +22,7 @@
           <ol>
             <!-- <li class="nav-link"><a href="./aboutus.html">Who we are</a></li>
             <li class="nav-link"><a href="">What we do</a> </li> -->
-            <li class="nav-link"><a href="#contact-container">Contact Us</a></li>
+            <li class="nav-link"><a href="#contact-us-form">Contact Us</a></li>
           </ol>
         </nav>
       </div>
@@ -29,7 +30,8 @@
 
     <div class="container">
       <div class="image-overlay">
-        <h1 class="hero-text">Active Social is an international <span class="white">video production</span> and <span class="white">media company.</span></span> <br><br> We travel the world <span class="white">filming, editing, and producing video content</span> tailored to your needs.
+        <h1 class="hero-text">Active Social is an international <span class="white">video production</span> and <span class="white">media company.</span></span> <br><br> We travel the world <span class="white">filming, editing, and producing video
+            content</span> tailored to your needs.
           <!--We are an international video production and media company. We film, edit, and produce video content tailored to your needs. -->
         </h1>
       </div>
@@ -106,13 +108,13 @@
             <h2>Photography</h2>
           </div>
 
-          <div class="skill">
-            <!-- <img class="skills-icons" src="images/soundIcon.png" alt=""> -->
+     <!--      <div class="skill">
             <div class="icon-container">
               <i class="fas fa-helicopter fa-3x"></i>
             </div>
-            <h2>Drone Operation</h2>
-          </div>
+            <h2>Testimonials</h2>
+          </div> -->
+
 
         </div>
       </div>
@@ -121,8 +123,9 @@
 
     <div class="contact-container">
       <!--Grid container-->
-
-      <div class="connect-form">
+      <a id="contact-us-form">
+        <div class="connect-form">
+        </a>
         <h3>Let's connect</h3>
         <!--Needs to be centered -->
         <p>For more information and comprehensive details on services, please send us a message.</p>
@@ -145,7 +148,23 @@
             <label id="message-label">How can we help you?: *</label>
             <textarea rows="5" placeholder="" name="entry.1678428078" required></textarea>
 
-            <button type="submit">Submit</button>
+            <!--added backdrop for modal-->
+            <div class="modal">
+
+              <!--Adding Modal class -->
+              <div class="modal-content">
+                <div class="modal-close-bar">
+                  <span>X</span>
+                </div>
+                <h4>Thank you!</h4>
+                <p>A team member will get in touch with you soon!</p>
+              </div>
+            </div>
+            <!--adding a close button in modal-->
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+            <button class="submit-button" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -158,6 +177,10 @@
       </div>
     </footer>
   </div>
+
+  <!--added script for js file-->
+  <script type="text/javascript" src="main.js">
+  </script>
 
 </body>
 
