@@ -30,8 +30,8 @@ h1 {
 
 button {
   font-size: 18px;
-  background-color: transparent;
-  color: var(--white);
+  color: black;
+  background-color: var(--primary);
   border: 2px solid var(--primary);
   /* Green */
   padding: 10px;
@@ -40,11 +40,7 @@ button {
   transition-duration: 0.4s;
 }
 
-button:hover {
-  background-color: var(--primary);
-  /* Green */
-  color: var(--secondary);
-}
+
 
 .white {
   color: var(--white);
@@ -93,7 +89,7 @@ button:hover {
 
 .image-overlay {
   position: absolute;
-   align-content: center;
+  align-content: center;
   /*top: 180px;*/
   /*width: 100%;*/
   background-color: rgba(0, 0, 0, 0.7);
