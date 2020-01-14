@@ -1,11 +1,12 @@
 :root {
-  --primary: hsl(174, 100%, 48%);
-  --primary-accent: hsl(177, 85%, 39%);
+  --primary: hsl(190, 100%, 50%);
+ /* main blue font*/
+/*  --primary-accent: hsl(177, 85%, 39%);*/
   --secondary: hsl(213, 28%, 5%);
   --secondary-accent: hsl(211, 19%, 15%);
   --white: hsl(37, 100%, 93%);
-  --base: 'Ubuntu', sans-serif;
-  --display: 'Nova Mono', monospace;
+  --base: 'Teko', sans-serif;
+  --display: 'Hind', sans-serif;
 }
 
 html,
@@ -19,6 +20,8 @@ body {
 
 .logo {
   letter-spacing: -0.02em;
+  font-family: var(--display);
+  font-size: 32px;
 }
 
 h1 {
@@ -70,33 +73,49 @@ button:hover {
 .nav-link {
   display: inline-block;
   padding-right: 20px;
+  font-family: var(--display);
+  font-size: 24px;
 }
 
 .container {
   margin-top: 77px;
   height: 600px;
-  background-image: url("assets/images/hero-image.png");
+  background-image: linear-gradient(180deg, rgba(9, 12, 16, 0.5) 0%, rgba(9, 12, 16, 0.5) 73.44%, #090C10 100%),
+    url("assets/images/hero-image.png");
   /* opacity: 0.5; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-overlay {
   position: absolute;
-  top: 180px;
-  width: 100%;
+   align-content: center;
+  /*top: 180px;*/
+  /*width: 100%;*/
   background-color: rgba(0, 0, 0, 0.7);
-  display: grid;
-  justify-items: center;
+  /*margin: 40px;*/
 }
 
 .hero-text {
-  font-family: var(--display);
-  text-transform: uppercase;
+  font-family: var(--base);
+  font-size: 60px;
+  font-weight: 300;
   max-width: 800px;
-  text-align: center;
-  padding: 40px 20px;
+  text-align: left;
+  padding: 20px 0 0 40px;
+  /*padding: 40px 20px;*/
+}
+
+.hero-text-small {
+  font-family: var(--display);
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0px;
+  padding-bottom: 20px;
 }
 
 a:link {
@@ -105,7 +124,7 @@ a:link {
 }
 
 a:visited {
-  color: var(--primary-accent);
+  color: var(--primary);
 }
 
 .nav-logo {
@@ -117,18 +136,6 @@ a:visited {
   text-transform: uppercase;
 }
 
-/* .container-center {
-  background-color: blue;
-  width: auto;
-  max-width: 1200px;
-} */
-/* .video-container iframe{
-    left:0;
-    top:0;
-    height:auto;
-    width:auto;
-    position:absolute;
-} */
 .video-container {
   width: 100%;
   display: flex;
@@ -169,9 +176,18 @@ iframe {
 }
 
 .skills-section {
+  font-family: var(--display);
+  font-size: 18px;
   width: 100%;
   display: grid;
   justify-items: center;
+  margin-bottom: 50px;
+}
+
+.header-text {
+  font-family: var(--base);
+  font-size: 60px;
+  font-weight: 300;
 }
 
 .skills-container {
@@ -184,16 +200,44 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-items: center;
-}
-
-.skill {
-  display: grid;
-  justify-items: center;
+  /*justify-items: center;*/
 }
 
 .skills-icons {
   padding: 50px 0 20px;
+}
+
+.icon-container {
+  /*width: 80px;*/
+/*  height: 80px;
+  padding: 30px;*/
+  display: flex;
+  justify-content: space-evenly;
+  /*margin: 60px 0 0 0;*/
+  /*display: grid;*/
+  /*justify-items: center;*/
+  /*align-items: center;*/
+}
+
+i {
+  color: var(--white);
+}
+
+.contact-information-text {
+  font-family: var(--display);
+  font-size: 18px;
+}
+
+label {
+  font-size: 18px;
+  font-family: var(--display);
+}
+
+input,
+textarea {
+  font-size: 18px;
+  border-radius: 5px;
+  border-width: 1px;
 }
 
 .footer-container {
@@ -204,20 +248,12 @@ iframe {
   color: var(--secondary-accent);
 }
 
-.icon-container {
-  width: 80px;
-  height: 80px;
-  border: 2px solid var(--primary-accent);
-  border-radius: 50%;
-  padding: 30px;
-  margin: 60px 0 0 0;
-  display: grid;
-  justify-items: center;
+.thankyou-container {
+  background-color: var(--secondary-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-i {
-  color: var(--white);
 }
 
 /* tablet styles */
@@ -228,6 +264,7 @@ i {
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
   }
+
 }
 
 /* phone styles */
