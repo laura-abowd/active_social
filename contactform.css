@@ -1,6 +1,6 @@
 .contact-container {
   text-decoration-color: white;
-  background-color: var(--secondary-accent);
+  background-color: var(--secondary);
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
@@ -10,15 +10,7 @@
   width: 100%;
   max-width: 400px;
   padding: 0 40px 40px;
-}
-
-h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  font-weight: normal;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .contact-form {
@@ -32,12 +24,30 @@ form {
   width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
+  font-size: 18px;
+  border-radius: 5px;
+  border-width: 1px;
   margin: 0 0 20px;
 }
 
+label {
+  font-size: 18px;
+  font-family: var(--display);
+  text-align: left;
+}
+
 button {
-  border-radius: 4px;
+  font-size: 18px;
+  color: black;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 10px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 10px;
 }
 
 /*styles for modal*/
@@ -60,5 +70,4 @@ button {
   top: 100px;
   left: calc(50% - 140px);
   z-index: 1;
-  
 }
