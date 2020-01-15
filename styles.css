@@ -186,11 +186,7 @@ a:visited {
   justify-content: center;
 }
 
-.icon-title {
-  display: flex;
 
-  justify-content: left;
-}
 
 i {
   color: var(--white);
