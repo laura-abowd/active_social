@@ -25,10 +25,15 @@ h1 {
   /*font-weight: lighter;*/
 }
 
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
 h3 {
   font-size: 32px;
 }
-
 
 .white {
   color: var(--white);
@@ -54,7 +59,7 @@ h3 {
 
 .nav-content {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,6 +70,7 @@ h3 {
   padding-right: 20px;
   font-family: var(--display);
   font-size: 24px;
+
 }
 
 a:link {
@@ -76,8 +82,16 @@ a:visited {
   color: var(--primary);
 }
 
+.nav-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
 .container {
-  height: 600px;
   background-image: linear-gradient(180deg, rgba(9, 12, 16, 0.5) 0%, rgba(9, 12, 16, 0.5) 73.44%, #090C10 100%),
     url("assets/images/hero-image.png");
   /* opacity: 0.5; */
@@ -87,19 +101,29 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .image-overlay {
-  position: absolute;
+  /*position: absolute;*/
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 800px;
   text-align: left;
   padding: 40px 60px;
 }
 
-.image-overlay p {
-  padding-top: 0;
+@media screen and (max-width: 450px) and (min-width: 359px) {
+  .image-overlay {
+    margin-top: 175px;
+  }
 }
+
+/*@media screen and (max-width: 359px) {
+  .image-overlay {
+    margin-top: 250px;
+  }
+}*/
+
 
 .hero-text-small {
   font-family: var(--display);
@@ -107,15 +131,6 @@ a:visited {
   font-weight: 500;
   margin: 0px;
   padding-bottom: 20px;
-}
-
-.nav-logo {
-  height: 100px;
-  width: 100px;
-}
-
-.nav-link {
-  text-transform: uppercase;
 }
 
 .video-container {
@@ -132,7 +147,6 @@ a:visited {
   grid-row-gap: 5rem;
   grid-column-gap: 1.5rem;
   padding: 0 100px 100px 100px;
-
 }
 
 /* new CSS to style the button and place it in the middle of image */
@@ -168,25 +182,21 @@ a:visited {
   margin: auto;
 }
 
-/*.skills-list {
-  display: grid;
-  grid-template-columns: repeat(4, 150px);
-  grid-row-gap: 2.5rem;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-}*/
-
-/*.skills-grid {
+.skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-*/
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+@media (max-width: 600px) {
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .skills-container {
+    margin: 50px;
+  }
 }
 
 .skills-list-grid {
@@ -216,16 +226,12 @@ i {
   color: var(--white);
 }
 
-.contact-information-text {
-  font-family: var(--display);
-  font-size: 18px;
-}
-
 .footer-container {
   font-family: var(--display);
   padding-top: 30px;
   padding-bottom: 30px;
   display: grid;
+  width: 100%;
   justify-items: center;
   background-color: var(--secondary-accent);
 }
@@ -239,16 +245,7 @@ i {
 }
 
 /* tablet styles */
-@media (min-width: 600px) {
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .skills-container {
-    margin: 50px;
-  }
-}
+
 
 /*@media (max-width: 768px) {
   .skills-list {
