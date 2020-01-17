@@ -21,15 +21,12 @@ body {
 h1 {
   font-family: var(--base);
   font-size: 60px;
+  max-width: 750px;
   margin: 20px 0;
   /*font-weight: lighter;*/
 }
 
-@media screen and (max-width: 450px) {
-  h1 {
-    font-size: 48px;
-  }
-}
+
 
 h3 {
   font-size: 32px;
@@ -110,20 +107,8 @@ a:visited {
   max-width: 800px;
   text-align: left;
   padding: 40px 60px;
+  margin: 20px 20px 20px 20px;
 }
-
-@media screen and (max-width: 450px) and (min-width: 359px) {
-  .image-overlay {
-    margin-top: 175px;
-  }
-}
-
-/*@media screen and (max-width: 359px) {
-  .image-overlay {
-    margin-top: 250px;
-  }
-}*/
-
 
 .hero-text-small {
   font-family: var(--display);
@@ -244,9 +229,28 @@ i {
   align-items: center;
 }
 
-/* tablet styles */
 
-
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    line-height: 100%;
+  }
+  .hero-text-small {
+    font-size: 18px;
+  }
+  .image-overlay {
+    padding: 10px 40px;
+  }
+  .container {
+    height: 80vh;
+  }
+  .logo {
+    font-size: 18px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
 /*@media (max-width: 768px) {
   .skills-list {
     display: grid;
