@@ -20,7 +20,7 @@
   width: 100%;
 }
 .contact-information-text {
-  font-family: var(--display);
+  font-family: var(--base);
   font-size: 18px;
 }
 
@@ -39,7 +39,7 @@ textarea {
 
 label {
   font-size: 18px;
-  font-family: var(--display);
+  font-family: var(--base);
   text-align: left;
 }
 
