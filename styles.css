@@ -5,6 +5,9 @@
   --white: hsl(37, 100%, 93%);
   --base: 'Hind', sans-serif;
   --display: 'Teko', sans-serif;
+  --dot-image: radial-gradient(#fff 10%, transparent 10%);
+  --dot-position: 0 0;
+  --dot-size: 15px 15px;
 }
 
 html,
@@ -41,7 +44,7 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 24px;
   margin: 10px 0;
 }
 
@@ -53,6 +56,18 @@ h4 {
   letter-spacing: -0.02em;
   font-family: var(--base);
   font-size: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.two-dot-grid {
+  background-image: var(--dot-image);
+  background-position: var(--dot-position);
+  background-size: var(--dot-size);
+  width: 15px;
+  height: 30px;
+  display: inline-block;
+  padding-bottom: 4px;
 }
 
 .nav-bar {
@@ -129,9 +144,9 @@ a:visited {
 }
 
 .dotted-line {
-  background-image: radial-gradient(#fff 10%, transparent 10%);
-  background-position: 0 0;
-  background-size: 15px 15px;
+  background-image: var(--dot-image);
+  background-position: var(--dot-position);
+  background-size: var(--dot-size);
   height: 90%;
   width: 15px;
   margin: 0 20px 0 0;
@@ -252,12 +267,17 @@ i {
 
 .footer-container {
   font-family: var(--base);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 20px 50px;
   display: grid;
-  width: 100%;
   justify-items: center;
   background-color: var(--secondary-accent);
+  text-align: center;
+}
+
+.copyright {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
 }
 
 .thankyou-container {
@@ -311,5 +331,9 @@ i {
 
   .skill-icon {
     width: 40px;
+  }
+
+  .break {
+    display: block;
   }
 }

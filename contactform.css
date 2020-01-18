@@ -4,13 +4,12 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  padding-bottom: 80px;
+  padding: 0 20px 80px;
 }
 
 .connect-form {
   width: 100%;
   max-width: 400px;
-  /*padding: 0 40px 40px;*/
   text-align: center;
 }
 
@@ -22,6 +21,7 @@
 .contact-information-text {
   font-family: var(--base);
   font-size: 18px;
+  margin-top: 0;
 }
 
 form {
