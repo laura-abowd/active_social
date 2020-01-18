@@ -33,7 +33,7 @@ input,
 textarea {
   font-size: 18px;
   border-radius: 5px;
-  border-width: 1px;
+  border-width: 2px;
   margin-bottom: 20px;
 }
 
@@ -45,6 +45,8 @@ label {
 
 button {
   font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: black;
   background-color: var(--primary);
   border: 2px solid var(--primary);
@@ -52,7 +54,7 @@ button {
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /*styles for modal*/
