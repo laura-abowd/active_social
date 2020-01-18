@@ -178,21 +178,6 @@ a:visited {
   padding: 0 100px 100px 100px;
 }
 
-/* new CSS to style the button and place it in the middle of image */
-/*.image-btn {
-  position: relative;
-  width: 100;
-}
-
-.image-btn .btn {
-  color: var(--white);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 5px;
-  background-color: black;
-}*/
-
 .skills-section {
   font-family: var(--base);
   font-size: 18px;
@@ -206,15 +191,11 @@ a:visited {
 }
 
 .skills-grid {
-  margin: 0 auto;
+  margin: 0 auto 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-width: 800px;
-}
-
-.black-grid {
-  background-color: var(--secondary-accent);
 }
 
 @media (max-width: 700px) {
