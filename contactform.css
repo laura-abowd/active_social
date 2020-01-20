@@ -4,7 +4,7 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  padding: 0 20px 80px;
+  padding: 20px 20px 80px;
 }
 
 .connect-form {

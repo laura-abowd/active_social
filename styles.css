@@ -33,9 +33,10 @@ h2 {
   font-family: var(--display);
   font-size: 60px;
   font-weight: 300;
+  line-height: 100%;
   color: var(--white);
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 h3 {
@@ -104,6 +105,11 @@ a:link {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 a:visited {
   color: var(--primary);
 }
@@ -161,23 +167,6 @@ a:visited {
   padding-bottom: 20px;
 }
 
-.video-section {
-  width: 100%;
-  background-color: var(--secondary-accent);
-  padding-top: 20px;
-}
-
-.video-container {
-  /*width: 100%;*/
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-row-gap: 2rem;
-  grid-column-gap: 1.5rem;
-  padding: 0 100px 100px 100px;
-}
-
 .skills-section {
   font-family: var(--base);
   font-size: 18px;
@@ -221,6 +210,23 @@ i {
   color: var(--white);
 }
 
+.video-section {
+  width: 100%;
+  background-color: var(--secondary-accent);
+  padding-top: 20px;
+}
+
+.video-container {
+  /*width: 100%;*/
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 1.5rem;
+  padding: 20px 100px 100px 100px;
+}
+
 .footer-container {
   font-family: var(--base);
   padding: 30px 20px 50px;
@@ -245,6 +251,23 @@ i {
 }
 
 @media (max-width: 700px) {
+  .image-overlay {
+    padding: 10px 40px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    line-height: 100%;
+  }
+  
+  .hero-text-small {
+    font-size: 18px;
+  }
+  
+  .hero-container {
+    height: 60vh;
+  }
+
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -268,7 +291,11 @@ i {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 3rem;
     grid-column-gap: 1.5rem;
-    padding: 0 20px 100px 20px;
+    padding: 20px 20px 80px 20px;
+  }
+
+  .contact-information-text {
+    text-align: left;
   }
 
 }
@@ -281,23 +308,6 @@ i {
 
   .nav-link {
     font-size: 18px;
-  }
-
-  h1 {
-    font-size: 50px;
-    line-height: 100%;
-  }
-  
-  .hero-text-small {
-    font-size: 18px;
-  }
-
-  .image-overlay {
-    padding: 10px 40px;
-  }
-
-  .hero-container {
-    height: 80vh;
   }
 
   .skills-container {
