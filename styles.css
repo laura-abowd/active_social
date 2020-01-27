@@ -190,12 +190,10 @@ a:visited {
   margin: 0 50%;
 }
 
-/*codepen down arrow start*/
+
 .arrow {
-    /*position: absolute;*/
+
   margin: 0 auto 80px;
-/*    top: 85%;
-    left: 50%;*/
   transform: translate(-50%,-50%);
 }
 .arrow span{
@@ -204,8 +202,6 @@ a:visited {
     height: 30px;
     border-bottom: 2px solid var(--primary);
     border-right: 2px solid var(--primary);
-/*    border-bottom: 2px solid #FF2A00;
-    border-right: 2px solid #FF2A00;*/
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 3s infinite;
@@ -227,8 +223,6 @@ a:visited {
         transform: rotate(45deg) translate(20px,20px);
     }
 }
-
-/*codepen down arrow end*/
 
 .skills-section {
   font-family: var(--base);
