@@ -3,16 +3,18 @@
   --secondary: hsl(213, 28%, 5%);
   --secondary-accent: hsl(211, 19%, 15%);
   --white: hsl(37, 100%, 93%);
-  --base: 'Hind', sans-serif;
+  --base: 'Open Sans', sans-serif;
   --display: 'Teko', sans-serif;
-  --dot-image: radial-gradient(#fff 10%, transparent 10%);
+  --dot-image: radial-gradient(#FFF 10%, transparent 10%);
   --dot-position: 0 0;
   --dot-size: 15px 15px;
 }
 
+/*#fff*/
 html,
 body {
   font-family: var(--base);
+  font-weight: 300;
   color: var(--primary);
   background-color: var(--secondary);
   margin: 0;
@@ -34,6 +36,7 @@ h2 {
   font-size: 60px;
   font-weight: 300;
   line-height: 100%;
+  letter-spacing: -0.02em;
   color: var(--white);
   text-align: center;
   margin: 20px 0 0;
@@ -42,11 +45,13 @@ h2 {
 h3 {
   font-size: 32px;
   letter-spacing: -0.02em;
+
 }
 
 h4 {
   font-size: 24px;
   margin: 10px 0;
+
 }
 
 .white {
@@ -59,6 +64,7 @@ h4 {
   font-size: 32px;
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
 
 .two-dot-grid {
@@ -97,7 +103,8 @@ h4 {
   /*padding-right: 20px;*/
   font-family: var(--base);
   font-size: 24px;
-
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 a:link {
@@ -119,10 +126,6 @@ a:visited {
   width: 100px;
 }
 
-.nav-link {
-  text-transform: uppercase;
-}
-
 .hero-container {
   background-image: linear-gradient(180deg, rgba(9, 12, 16, 0.5) 0%, rgba(9, 12, 16, 0.5) 73.44%, #090C10 100%),
     url("assets/images/hero-image.png");
@@ -130,7 +133,12 @@ a:visited {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  display: flex;
+/*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;*/
+  display: grid;
+  grid-template-rows: auto 80px;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -138,9 +146,9 @@ a:visited {
 }
 
 .image-overlay {
-  /*position: absolute;*/
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 800px;
+  max-height: 500px;
   text-align: left;
   padding: 40px 60px;
   margin: 20px 20px 20px 20px;
@@ -161,26 +169,81 @@ a:visited {
 .hero-text-small {
   font-family: var(--base);
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 700px;
+  letter-spacing: -0.02em;
   margin: 0px;
   padding-bottom: 20px;
 }
+
+.down-arrow {
+  background-image: var(--dot-image);
+  background-position: var(--dot-position);
+  background-size: var(--dot-size);
+  height: 4rem;
+  width: 15px;
+  text-align: center;
+  margin: 0 50%;
+}
+
+.down-arrow-svg {
+  margin: 0 50%;
+}
+
+/*codepen down arrow start*/
+.arrow {
+    /*position: absolute;*/
+  margin: 0 auto 80px;
+/*    top: 85%;
+    left: 50%;*/
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+/*    border-bottom: 2px solid #FF2A00;
+    border-right: 2px solid #FF2A00;*/
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 3s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.5s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/*codepen down arrow end*/
 
 .skills-section {
   font-family: var(--base);
   font-size: 18px;
   width: 100%;
   text-align: center;
+  padding-top: 20px;
 }
-
 
 .skills-container {
   margin: auto;
 }
 
 .skills-grid {
-  margin: 0 auto 80px;
+  margin: 20px auto 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -212,7 +275,8 @@ i {
 
 .video-section {
   width: 100%;
-  background-color: var(--secondary-accent);
+  /*background-color: var(--secondary-accent);*/
+  background-color: #1B1D20;
   padding-top: 20px;
 }
 
@@ -232,7 +296,8 @@ i {
   padding: 30px 20px 50px;
   display: grid;
   justify-items: center;
-  background-color: var(--secondary-accent);
+  background-color: #1B1D20;
+  /*background-color: var(--secondary-accent);*/
   text-align: center;
 }
 
@@ -254,16 +319,16 @@ i {
   .image-overlay {
     padding: 10px 40px;
   }
-  
+
   h1 {
     font-size: 50px;
     line-height: 100%;
   }
-  
+
   .hero-text-small {
     font-size: 18px;
   }
-  
+
   .hero-container {
     height: 60vh;
   }
@@ -301,7 +366,7 @@ i {
 }
 
 @media screen and (max-width: 500px) {
-  
+
   .logo {
     font-size: 24px;
   }
