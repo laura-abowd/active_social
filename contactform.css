@@ -1,37 +1,37 @@
 .contact-container {
   text-decoration-color: white;
   background-color: var(--secondary);
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr;
-  padding: 20px 20px 80px;
-}
-
-.connect-form {
-  width: 100%;
   max-width: 400px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
-.contact-form {
+.contact__form {
   display: grid;
   justify-items: center;
   width: 100%;
 }
 
-.contact-information-text {
+.contact__text {
   font-family: var(--base);
   font-size: 18px;
-  margin-top: 0;
+  margin: 20px 0;
 }
 
-form {
+.form {
   display: grid;
   width: 100%;
 }
 
-input,
-textarea {
+.form__label {
+  font-size: 24px;
+  font-family: var(--base);
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.form__input {
   font-size: 18px;
   border-radius: 8px;
   padding: 8px;
@@ -41,12 +41,3 @@ textarea {
   color: var(--white);
   outline: none;
 }
-
-label {
-  font-size: 24px;
-  font-family: var(--base);
-  font-weight: 400;
-  text-align: left;
-  margin-bottom: 4px;
-}
-
