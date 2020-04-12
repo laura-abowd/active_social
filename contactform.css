@@ -18,6 +18,7 @@
   justify-items: center;
   width: 100%;
 }
+
 .contact-information-text {
   font-family: var(--base);
   font-size: 18px;
@@ -38,6 +39,7 @@ textarea {
   border: 2px solid var(--white);
   background-color: transparent;
   color: var(--white);
+  outline: none;
 }
 
 label {
@@ -46,19 +48,5 @@ label {
   font-weight: 400;
   text-align: left;
   margin-bottom: 4px;
-}
-
-button {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: black;
-  background-color: var(--primary);
-  border: 2px solid var(--primary);
-  padding: 10px;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-  border-radius: 8px;
 }
 
