@@ -9,6 +9,7 @@
   --dot-image: radial-gradient(#FFF 10%, transparent 10%);
   --dot-position: 0 0;
   --dot-size: 15px 15px;
+
 }
 
 html,
@@ -19,18 +20,14 @@ body {
   background-color: var(--black);
   margin: 0;
   scroll-behavior: smooth;
-}
-
-.submit {
-  height: 100vh;
-  background-color: var(--black-accent);
+  font-size: 100%;
 }
 
 h1 {
   font-family: var(--display);
 }
 
-.hero-text {
+.hero-text--h1 {
   font-size: 3.75rem;
   max-width: 700px;
   margin: 20px 0;
@@ -39,7 +36,7 @@ h1 {
   line-height: 120%;
 }
 
-.hero-text-small {
+.hero-text--sm {
   font-family: var(--base);
   font-size: 32px;
   font-weight: 300;
@@ -106,7 +103,7 @@ h5 {
   width: 200px;
 }
 
-.btn--blue {
+.btn__submit--blue {
   background-color: var(--cyan);
   border: none;
 }
@@ -118,7 +115,7 @@ h5 {
 .logo {
   letter-spacing: -0.02em;
   font-family: var(--base);
-  font-size: 32px;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -147,18 +144,18 @@ h5 {
   z-index: 99;
 }
 
-.nav-logo {
-  height: 100px;
-  width: 100px;
-}
-
 .nav-link {
   display: inline-block;
   font-family: var(--base);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.br {
+  display: none;
+}
+
 .nav-link-hidden {
  visibility: hidden;
 }
@@ -201,14 +198,6 @@ a:visited {
   border-radius: 5px;
   margin: 80px auto;
   padding: 40px;
-}
-
-.hero-p__submit {
-  color: var(--white);
-  text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 24px;
-  margin: 0;
 }
 
 .image-overlay {
@@ -392,13 +381,15 @@ i {
 }
 
 @media screen and (max-width: 500px) {
-
-  .logo {
+  .logo{
     font-size: 24px;
   }
 
-  .nav-link {
-    font-size: 18px;
+  .nav-link,
+  .br
+  {
+    font-size: 16px;
+    display: block;
   }
 
   .arrow {
@@ -427,7 +418,6 @@ i {
     grid-template-columns: 40% 60%;
     grid-column-gap: 1.5rem;
     padding: 0 0 0 0;
-
   }
 
   h3 {
