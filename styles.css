@@ -209,14 +209,14 @@ a:visited {
   margin: 20px 20px 20px 20px;
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .dotted-line {
   background-image: var(--dot-image);
   background-position: var(--dot-position);
   background-size: var(--dot-size);
-  height: 90%;
+  /*height: 90%;*/
   width: 15px;
   margin: 0 20px 0 0;
 }
@@ -392,6 +392,13 @@ i {
     display: block;
   }
 
+  .hero-text--h1 {
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .hero-text--sm {
+    font-size: 18px;
+  }
   .arrow {
     display: none;
   }
